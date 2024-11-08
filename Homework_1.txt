@@ -1,0 +1,74 @@
+Q. Write a program to find the greatest value among two integers
+
+package com.demo;
+
+public class If_Demo {
+
+	public static void main(String[] args) {
+		int first = 80;					//initialization of first
+		int second = 50; 				//initialization of second
+		int Max;	
+		if(first<second) {
+			Max = second;
+			System.out.println("Greater value is: " +Max);
+		}
+		else {
+			Max = first;
+			System.out.println("Greater value is: " +Max);	
+		}
+	}
+}
+
+________________________________________________________________________
+
+Q. Write a program to find the greatest value among three integers
+
+package com.demo;
+
+public class If_demo3 {
+
+	public static void main(String[] args) {
+		int first = 80;					//initialization of first
+		int second = 500; 	
+		int third = 305;
+		
+		if(first>second && first > third) {
+			System.out.println("Greatest value is: " +first);
+		}
+		else if(second > first && second > third) {
+			System.out.println("Greatest value is: " +second);
+		}
+		else {
+			System.out.println("Greatest value is: " +third);
+		}
+	}
+}
+
+________________________________________________________________________
+
+Q. Write a program to find the greatest value among four integers
+
+package com.demo;
+
+public class Ifelse {
+
+	public static void main(String[] args) {
+		int first = 3000;					//initialization of first
+		int second = 500; 				//initialization of second
+		int third = 9000;
+		int fourth  = 1200;
+		
+		if(first>second && first > third && first > fourth) {
+			System.out.println("Greatest value is: " +first);
+		}
+		if(second > first && second > third && second > fourth) {
+			System.out.println("Greatest value is: " +second);
+		}
+		if(third > first && third > second && third > fourth) {
+			System.out.println("Greatest value is: " +third);
+		}
+		if(fourth > first && fourth > second && fourth > third) {
+			System.out.println("Greatest value is: " +fourth);
+		}
+	}
+}
