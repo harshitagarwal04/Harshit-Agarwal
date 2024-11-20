@@ -32,7 +32,6 @@ public class BitwiseTest {
 
 	public static void main(String[] args)
 	{
-		
 		int num = 25; // initialising Input
 
 		int ls1 = num << 1; 						// left Shift by 1 place
