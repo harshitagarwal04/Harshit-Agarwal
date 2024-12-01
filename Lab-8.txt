@@ -1,0 +1,75 @@
+Q.1) Write a Java program to associate the specified value with the specified key in a HashMap.
+Declare HashMap add 10 values as user input.
+
+_______________________________________________________________________________________________
+package demo;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class HashMapInputExample {
+    public static void main(String[] args) {
+        // Declaring a HashMap to store key and value pairs
+        HashMap<String, String> map = new HashMap<>();
+
+        // Input
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter 10 key-value pairs:");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Enter key " + i + ": ");
+            String key = scanner.nextLine();
+
+            System.out.print("Enter value for " + key + ": ");
+            String value = scanner.nextLine();
+
+            // Adding key value pair
+            map.put(key, value);
+        }
+
+        // Display
+        System.out.println("\nHashMap contains: " + map);
+
+        scanner.close();
+    }
+}
+___________________________________________________________________________________________
+
+
+Q.2) Write a Java program to check whether a HashMap contains key-value mappings (empty) or not.
+
+_______________________________________________________________________________________________
+package demo;
+
+import java.util.HashMap;
+
+public class HashMapCheckEmptyExample {
+    public static void main(String[] args) {
+
+        // Declaring HashMap
+        HashMap<Integer, String> map = new HashMap<>();
+
+        // Check if the HashMap is empty or not
+        if (map.isEmpty()) {
+            System.out.println("The HashMap is empty.");
+        } else {
+            System.out.println("The HashMap is not empty.");
+        }
+
+        // key value pairs
+        map.put(1, "Apple");
+        map.put(2, "Banana");
+
+        // Check if empty or not like before
+        if (map.isEmpty()) {
+            System.out.println("The HashMap is empty.");
+        } else {
+            System.out.println("The HashMap is not empty.");
+        }
+
+        // Display
+        System.out.println("HashMap contains: " + map);
+    }
+}
+______________________________________________________________________________________________
