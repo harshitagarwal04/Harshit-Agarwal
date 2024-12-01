@@ -1,0 +1,59 @@
+Q.1) Write a program to prints numbers from 0 to 4 using thread
+
+______________________________________________________________________________
+package demo;
+
+// Class that extends Thread to print numbers
+class NumberPrinter extends Thread {
+    @Override
+    public void run() {
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+public class ThreadExample1 {
+    public static void main(String[] args) {
+        // Creating an instance of NumberPrinter
+        NumberPrinter printer = new NumberPrinter();
+
+        // Start the thread
+        printer.start();
+    }
+}
+____________________________________________________________________________
+
+
+Q.2) Write a program to prints 1 to 10 and sleep for 1000ms using thread
+
+______________________________________________________________________________
+package demo;
+
+// Class that extends Thread to print numbers with sleep
+class SleepNumberPrinter extends Thread {
+    @Override
+    public void run() {
+        try {
+
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(i);
+                // Sleep for 1000ms ( ~ 1 second)
+                Thread.sleep(1000);
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted: " + e.getMessage());
+        }
+    }
+}
+
+public class ThreadExample2 {
+    public static void main(String[] args) {
+        // Create an instance of SleepNumberPrinter
+        SleepNumberPrinter printer = new SleepNumberPrinter();
+
+        printer.start();
+    }
+}
+______________________________________________________________________________
