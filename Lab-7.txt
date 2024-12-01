@@ -1,0 +1,62 @@
+Q.1) Write a Java program to append the specified element to the end of a HashSet.
+( use add() method)
+
+______________________________________________________________________________________________________________
+package demo;
+
+import java.util.HashSet;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+        // Creating HashSet
+        HashSet<String> set = new HashSet<>();
+
+        // Add initial elements
+        set.add("Apple");
+        set.add("Banana");
+        set.add("Cherry");
+
+        // Display 
+        System.out.println("HashSet before appending: " + set);
+
+        // Append a new element to the HashSet using add() method
+        set.add("Dragonfruit");
+
+        // Display after adding the new element
+        System.out.println("HashSet after appending: " + set);
+    }
+}
+______________________________________________________________________________________________________________
+
+
+Q.2) Write a program to declare stack. Store 10 elements into it. display stack elements.
+Remove 4 elements from stack and display it again.
+
+______________________________________________________________________________________________________________
+package demo;
+
+import java.util.Stack;
+
+public class StackExample {
+    public static void main(String[] args) {
+        // Declaring stack
+        Stack<Integer> stack = new Stack<>();
+
+        // Storing 10 elements
+        for (int i = 1; i <= 10; i++) {
+            stack.push(i);
+        }
+
+        // Display
+        System.out.println("Stack after pushing 10 elements: " + stack);
+
+        // Removing 4 elements
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Removing element: " + stack.pop());
+        }
+
+        // Display
+        System.out.println("Stack after removing 4 elements: " + stack);
+    }
+}
+______________________________________________________________________________________________________________
